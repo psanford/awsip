@@ -30,12 +30,12 @@ func ExampleRange() {
 	fmt.Println(r.Prefix)
 	fmt.Println(r.NetworkBorderGroup)
 	fmt.Println(r.Region)
-	fmt.Println(r.Service)
+	fmt.Println(r.Services)
 	// Output:
 	// 54.74.0.0/15
 	// eu-west-1
 	// eu-west-1
-	// AMAZON
+	// [AMAZON EC2]
 }
 ```
 
@@ -46,7 +46,10 @@ $ ./awsip 54.74.0.27
   "Prefix": "54.74.0.0/15",
   "NetworkBorderGroup": "eu-west-1",
   "Region": "eu-west-1",
-  "Service": "EC2"
+  "Services": [
+    "AMAZON",
+    "EC2"
+  ]
 }
 ```
 

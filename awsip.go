@@ -28,5 +28,5 @@ type IPRange struct {
 	Prefix             netip.Prefix
 	NetworkBorderGroup string
 	Region             string
-	Service            string
+	Services           []string
 }

@@ -37,12 +37,12 @@ func ExampleRange() {
 	fmt.Println(r.Prefix)
 	fmt.Println(r.NetworkBorderGroup)
 	fmt.Println(r.Region)
-	fmt.Println(r.Service)
+	fmt.Println(r.Services)
 	// Output:
 	// 54.74.0.0/15
 	// eu-west-1
 	// eu-west-1
-	// AMAZON
+	// [AMAZON EC2]
 }
 
 func ExampleIsAwsIP() {

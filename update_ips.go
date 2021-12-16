@@ -9,6 +9,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"sort"
 	"text/template"
 
 	"golang.org/x/tools/imports"
@@ -29,6 +30,48 @@ func main() {
 	if err != nil {
 		log.Fatalf("decode json err: %s", err)
 	}
+
+	ipv4s := make(map[string]IPv4Prefix)
+	ipv6s := make(map[string]IPv6Prefix)
+
+	for _, ipv4 := range ips.Prefixes {
+		if existing, found := ipv4s[ipv4.IPPrefix]; found {
+			existing.Services = append(existing.Services, ipv4.Service)
+			ipv4s[ipv4.IPPrefix] = existing
+		} else {
+			ipv4.Services = []string{ipv4.Service}
+			ipv4s[ipv4.IPPrefix] = ipv4
+		}
+	}
+
+	for _, ipv6 := range ips.Ipv6Prefixes {
+		if existing, found := ipv6s[ipv6.Ipv6Prefix]; found {
+			existing.Services = append(existing.Services, ipv6.Service)
+			ipv6s[ipv6.Ipv6Prefix] = existing
+		} else {
+			ipv6.Services = []string{ipv6.Service}
+			ipv6s[ipv6.Ipv6Prefix] = ipv6
+		}
+	}
+
+	ips.Prefixes = ips.Prefixes[:0]
+	ips.Ipv6Prefixes = ips.Ipv6Prefixes[:0]
+
+	for _, ipv4 := range ipv4s {
+		ips.Prefixes = append(ips.Prefixes, ipv4)
+	}
+
+	for _, ipv6 := range ipv6s {
+		ips.Ipv6Prefixes = append(ips.Ipv6Prefixes, ipv6)
+	}
+
+	sort.Slice(ips.Prefixes, func(i, j int) bool {
+		return ips.Prefixes[i].IPPrefix < ips.Prefixes[j].IPPrefix
+	})
+
+	sort.Slice(ips.Ipv6Prefixes, func(i, j int) bool {
+		return ips.Ipv6Prefixes[i].Ipv6Prefix < ips.Ipv6Prefixes[j].Ipv6Prefix
+	})
 
 	tmpl := template.Must(template.New("ips").Parse(ipTmpl))
 
@@ -67,7 +110,7 @@ var ipRanges = []IPRange{
 		Prefix: netip.MustParsePrefix("{{.IPPrefix}}"),
 		NetworkBorderGroup: "{{.NetworkBorderGroup}}",
 		Region: "{{.Region}}",
-		Service: "{{.Service}}",
+		Services: []string{ {{range .Services}}"{{.}}",{{end}} },
 	},
 {{- end}}
 {{- range .Ipv6Prefixes}}
@@ -75,7 +118,7 @@ var ipRanges = []IPRange{
 		Prefix: netip.MustParsePrefix("{{.Ipv6Prefix}}"),
 		NetworkBorderGroup: "{{.NetworkBorderGroup}}",
 		Region: "{{.Region}}",
-		Service: "{{.Service}}",
+		Services: []string{ {{range .Services}}"{{.}}",{{end}} },
 	},
 {{- end}}
 }
@@ -84,18 +127,24 @@ var createDate = "{{.CreateDate}}"
 `
 
 type IpResp struct {
-	CreateDate   string `json:"createDate"`
-	Ipv6Prefixes []struct {
-		Ipv6Prefix         string `json:"ipv6_prefix"`
-		NetworkBorderGroup string `json:"network_border_group"`
-		Region             string `json:"region"`
-		Service            string `json:"service"`
-	} `json:"ipv6_prefixes"`
-	Prefixes []struct {
-		IPPrefix           string `json:"ip_prefix"`
-		NetworkBorderGroup string `json:"network_border_group"`
-		Region             string `json:"region"`
-		Service            string `json:"service"`
-	} `json:"prefixes"`
-	SyncToken string `json:"syncToken"`
+	CreateDate   string       `json:"createDate"`
+	Ipv6Prefixes []IPv6Prefix `json:"ipv6_prefixes"`
+	Prefixes     []IPv4Prefix `json:"prefixes"`
+	SyncToken    string       `json:"syncToken"`
+}
+
+type IPv6Prefix struct {
+	Ipv6Prefix         string `json:"ipv6_prefix"`
+	NetworkBorderGroup string `json:"network_border_group"`
+	Region             string `json:"region"`
+	Service            string `json:"service"`
+	Services           []string
+}
+
+type IPv4Prefix struct {
+	IPPrefix           string `json:"ip_prefix"`
+	NetworkBorderGroup string `json:"network_border_group"`
+	Region             string `json:"region"`
+	Service            string `json:"service"`
+	Services           []string
 }
