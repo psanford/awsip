@@ -2,6 +2,8 @@
 
 awsip is a Go package that allows you to determine if an IP address belongs to AWS.
 
+A cli tool is also included in `cmd/awsip` for easily checking the status of an ip address.
+
 ## Example:
 
 ```
@@ -34,6 +36,17 @@ func ExampleRange() {
 	// eu-west-1
 	// eu-west-1
 	// AMAZON
+}
+```
+
+CLI:
+```
+$ ./awsip 54.74.0.27
+{
+  "Prefix": "54.74.0.0/15",
+  "NetworkBorderGroup": "eu-west-1",
+  "Region": "eu-west-1",
+  "Service": "EC2"
 }
 ```
 
