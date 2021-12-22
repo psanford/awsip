@@ -5978,6 +5978,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON", "GLOBALACCELERATOR"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("15.197.32.0/23"),
+		NetworkBorderGroup: "GLOBAL",
+		Region:             "GLOBAL",
+		Services:           []string{"AMAZON", "GLOBALACCELERATOR"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("15.197.4.0/22"),
 		NetworkBorderGroup: "GLOBAL",
 		Region:             "GLOBAL",
@@ -35181,4 +35187,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2021-12-20-07-53-19"
+var createDate = "2021-12-22-00-53-21"
