@@ -6500,6 +6500,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"API_GATEWAY"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("15.229.36.0/23"),
+		NetworkBorderGroup: "sa-east-1",
+		Region:             "sa-east-1",
+		Services:           []string{"API_GATEWAY"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("15.230.0.12/31"),
 		NetworkBorderGroup: "sa-east-1",
 		Region:             "sa-east-1",
@@ -7028,6 +7034,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("15.230.166.0/24"),
+		NetworkBorderGroup: "eu-west-1",
+		Region:             "eu-west-1",
+		Services:           []string{"AMAZON"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("15.230.170.0/23"),
 		NetworkBorderGroup: "eu-central-2",
 		Region:             "eu-central-2",
@@ -7265,6 +7277,12 @@ var ipRanges = []IPRange{
 		Prefix:             netip.MustParsePrefix("15.230.206.0/24"),
 		NetworkBorderGroup: "us-east-1",
 		Region:             "us-east-1",
+		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("15.230.207.0/24"),
+		NetworkBorderGroup: "ap-northeast-2",
+		Region:             "ap-northeast-2",
 		Services:           []string{"AMAZON"},
 	},
 	{
@@ -17586,6 +17604,12 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "ap-northeast-1",
 		Region:             "ap-northeast-1",
 		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.77.112.0/22"),
+		NetworkBorderGroup: "ap-northeast-1",
+		Region:             "ap-northeast-1",
+		Services:           []string{"API_GATEWAY"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("35.80.0.0/12"),
@@ -30908,6 +30932,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("99.83.120.0/22"),
+		NetworkBorderGroup: "ap-southeast-2",
+		Region:             "ap-southeast-2",
+		Services:           []string{"AMAZON"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("99.83.128.0/17"),
 		NetworkBorderGroup: "GLOBAL",
 		Region:             "GLOBAL",
@@ -35259,4 +35289,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2022-01-04-18-33-20"
+var createDate = "2022-01-06-03-43-22"
