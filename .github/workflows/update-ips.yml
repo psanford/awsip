@@ -2,9 +2,11 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '16 7 * * *'
-name: update-ips pr
+name: update-ips
+permissions:
+  contents: write
 jobs:
-  createPullRequest:
+  update:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Go
@@ -15,16 +17,16 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v2
-        
+
       - name: Run go-generate
         run: go generate
-        
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@dcd5fd746d53dd8de555c0f10bca6c35628be47a
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Update ip ranges
-          title: 'Update IP address ranges'
-          body: >
-            This PR was auto-generated.
-          labels: report, automated pr
+
+      - name: Run tests
+        run: go test -v ./...
+
+      - name: Commit and push if changed
+        run: |-
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -a -m "Update ip ranges" || exit 0
+          git push
