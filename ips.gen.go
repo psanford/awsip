@@ -17516,6 +17516,138 @@ var ipRanges = []IPRange{
 		Services:           []string{"EC2_INSTANCE_CONNECT"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("35.71.100.0/24"),
+		NetworkBorderGroup: "ap-south-1",
+		Region:             "ap-south-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.101.0/24"),
+		NetworkBorderGroup: "eu-west-3",
+		Region:             "eu-west-3",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.102.0/24"),
+		NetworkBorderGroup: "us-east-2",
+		Region:             "us-east-2",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.103.0/24"),
+		NetworkBorderGroup: "af-south-1",
+		Region:             "af-south-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.104.0/24"),
+		NetworkBorderGroup: "me-central-1",
+		Region:             "me-central-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.105.0/24"),
+		NetworkBorderGroup: "eu-central-1",
+		Region:             "eu-central-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.106.0/24"),
+		NetworkBorderGroup: "sa-east-1",
+		Region:             "sa-east-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.107.0/24"),
+		NetworkBorderGroup: "ap-east-1",
+		Region:             "ap-east-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.108.0/24"),
+		NetworkBorderGroup: "ap-south-2",
+		Region:             "ap-south-2",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.109.0/24"),
+		NetworkBorderGroup: "ap-northeast-2",
+		Region:             "ap-northeast-2",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.110.0/24"),
+		NetworkBorderGroup: "ap-northeast-3",
+		Region:             "ap-northeast-3",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.111.0/24"),
+		NetworkBorderGroup: "eu-west-2",
+		Region:             "eu-west-2",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.112.0/24"),
+		NetworkBorderGroup: "ap-southeast-4",
+		Region:             "ap-southeast-4",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.113.0/24"),
+		NetworkBorderGroup: "eu-south-1",
+		Region:             "eu-south-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.114.0/24"),
+		NetworkBorderGroup: "ap-northeast-1",
+		Region:             "ap-northeast-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.115.0/24"),
+		NetworkBorderGroup: "us-gov-east-1",
+		Region:             "us-gov-east-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.116.0/24"),
+		NetworkBorderGroup: "us-gov-west-1",
+		Region:             "us-gov-west-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.117.0/24"),
+		NetworkBorderGroup: "us-west-1",
+		Region:             "us-west-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.118.0/24"),
+		NetworkBorderGroup: "ap-southeast-1",
+		Region:             "ap-southeast-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.119.0/24"),
+		NetworkBorderGroup: "ca-central-1",
+		Region:             "ca-central-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.120.0/24"),
+		NetworkBorderGroup: "eu-south-2",
+		Region:             "eu-south-2",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.121.0/24"),
+		NetworkBorderGroup: "eu-central-2",
+		Region:             "eu-central-2",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("35.71.128.0/17"),
 		NetworkBorderGroup: "GLOBAL",
 		Region:             "GLOBAL",
@@ -17528,6 +17660,18 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("35.71.68.0/22"),
+		NetworkBorderGroup: "us-east-1",
+		Region:             "us-east-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.72.0/22"),
+		NetworkBorderGroup: "eu-west-1",
+		Region:             "eu-west-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("35.71.96.0/24"),
 		NetworkBorderGroup: "ap-southeast-3",
 		Region:             "ap-southeast-3",
@@ -17537,6 +17681,18 @@ var ipRanges = []IPRange{
 		Prefix:             netip.MustParsePrefix("35.71.97.0/24"),
 		NetworkBorderGroup: "ap-southeast-2",
 		Region:             "ap-southeast-2",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.98.0/24"),
+		NetworkBorderGroup: "eu-north-1",
+		Region:             "eu-north-1",
+		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.71.99.0/24"),
+		NetworkBorderGroup: "me-south-1",
+		Region:             "me-south-1",
 		Services:           []string{"AMAZON", "DYNAMODB", "EC2"},
 	},
 	{
@@ -35355,4 +35511,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2022-01-07-21-53-22"
+var createDate = "2022-01-08-21-23-23"
