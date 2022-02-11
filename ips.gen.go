@@ -6008,6 +6008,18 @@ var ipRanges = []IPRange{
 		Services:           []string{"CLOUD9"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("15.190.0.0/22"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
+		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("15.190.16.0/20"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
+		Services:           []string{"AMAZON"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("15.191.0.0/16"),
 		NetworkBorderGroup: "us-east-1",
 		Region:             "us-east-1",
@@ -8921,6 +8933,12 @@ var ipRanges = []IPRange{
 		Prefix:             netip.MustParsePrefix("15.248.40.0/22"),
 		NetworkBorderGroup: "us-west-2",
 		Region:             "us-west-2",
+		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("15.248.48.0/21"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
 		Services:           []string{"AMAZON"},
 	},
 	{
@@ -19922,6 +19940,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("51.16.0.0/15"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
+		Services:           []string{"AMAZON", "EC2"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("51.20.0.0/14"),
 		NetworkBorderGroup: "eu-west-3",
 		Region:             "eu-west-3",
@@ -30788,6 +30812,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("99.151.152.0/21"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
+		Services:           []string{"AMAZON", "EC2"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("99.151.64.0/21"),
 		NetworkBorderGroup: "eu-south-2",
 		Region:             "eu-south-2",
@@ -36309,4 +36339,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2022-02-10-00-13-23"
+var createDate = "2022-02-10-16-23-23"
