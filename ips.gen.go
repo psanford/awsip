@@ -6236,6 +6236,42 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON", "EC2", "ROUTE53_HEALTHCHECKS_PUBLISHING"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("15.177.93.0/24"),
+		NetworkBorderGroup: "me-central-1",
+		Region:             "me-central-1",
+		Services:           []string{"AMAZON", "EC2", "ROUTE53_HEALTHCHECKS_PUBLISHING"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("15.177.94.0/24"),
+		NetworkBorderGroup: "ap-south-2",
+		Region:             "ap-south-2",
+		Services:           []string{"AMAZON", "EC2", "ROUTE53_HEALTHCHECKS_PUBLISHING"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("15.177.96.0/24"),
+		NetworkBorderGroup: "ap-southeast-4",
+		Region:             "ap-southeast-4",
+		Services:           []string{"AMAZON", "EC2", "ROUTE53_HEALTHCHECKS_PUBLISHING"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("15.177.97.0/24"),
+		NetworkBorderGroup: "eu-south-2",
+		Region:             "eu-south-2",
+		Services:           []string{"AMAZON", "EC2", "ROUTE53_HEALTHCHECKS_PUBLISHING"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("15.177.98.0/24"),
+		NetworkBorderGroup: "eu-central-2",
+		Region:             "eu-central-2",
+		Services:           []string{"AMAZON", "EC2", "ROUTE53_HEALTHCHECKS_PUBLISHING"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("15.177.99.0/24"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
+		Services:           []string{"AMAZON", "EC2", "ROUTE53_HEALTHCHECKS_PUBLISHING"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("15.181.0.0/20"),
 		NetworkBorderGroup: "us-west-2-sea-1",
 		Region:             "us-west-2",
@@ -37377,4 +37413,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2022-05-31-23-03-26"
+var createDate = "2022-06-02-01-13-21"
