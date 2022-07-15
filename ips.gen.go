@@ -7329,37 +7329,37 @@ var ipRanges = []IPRange{
 	},
 	{
 		Prefix:             netip.MustParsePrefix("15.220.44.0/22"),
-		NetworkBorderGroup: "ap-southeast-1",
+		NetworkBorderGroup: "ap-southeast-1-han-1",
 		Region:             "ap-southeast-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("15.220.48.0/21"),
-		NetworkBorderGroup: "eu-central-1",
+		NetworkBorderGroup: "eu-central-1-waw-1",
 		Region:             "eu-central-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("15.220.56.0/21"),
-		NetworkBorderGroup: "ap-northeast-1",
+		NetworkBorderGroup: "ap-northeast-1-tpe-1",
 		Region:             "ap-northeast-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("15.220.64.0/20"),
-		NetworkBorderGroup: "eu-central-1",
+		NetworkBorderGroup: "eu-central-1-waw-1",
 		Region:             "eu-central-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("15.220.80.0/20"),
-		NetworkBorderGroup: "ap-northeast-1",
+		NetworkBorderGroup: "ap-northeast-1-tpe-1",
 		Region:             "ap-northeast-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("15.220.96.0/20"),
-		NetworkBorderGroup: "ap-southeast-1",
+		NetworkBorderGroup: "ap-southeast-1-han-1",
 		Region:             "ap-southeast-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
@@ -37917,4 +37917,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2022-07-14-06-03-05"
+var createDate = "2022-07-14-23-13-08"
