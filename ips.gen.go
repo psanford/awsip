@@ -5222,6 +5222,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("13.34.9.76/32"),
+		NetworkBorderGroup: "eu-central-1",
+		Region:             "eu-central-1",
+		Services:           []string{"AMAZON"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("13.35.0.0/16"),
 		NetworkBorderGroup: "GLOBAL",
 		Region:             "GLOBAL",
@@ -19677,6 +19683,12 @@ var ipRanges = []IPRange{
 	},
 	{
 		Prefix:             netip.MustParsePrefix("35.90.132.0/23"),
+		NetworkBorderGroup: "us-west-2",
+		Region:             "us-west-2",
+		Services:           []string{"API_GATEWAY"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("35.92.26.0/24"),
 		NetworkBorderGroup: "us-west-2",
 		Region:             "us-west-2",
 		Services:           []string{"API_GATEWAY"},
@@ -37100,6 +37112,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON", "CLOUDFRONT"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("2600:f000:8000::/39"),
+		NetworkBorderGroup: "us-west-2",
+		Region:             "us-west-2",
+		Services:           []string{"AMAZON", "EC2"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("2600:f00c:8000::/39"),
 		NetworkBorderGroup: "us-west-2",
 		Region:             "us-west-2",
@@ -38583,4 +38601,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2022-07-29-18-13-08"
+var createDate = "2022-08-01-23-53-08"
