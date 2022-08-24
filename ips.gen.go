@@ -6020,10 +6020,46 @@ var ipRanges = []IPRange{
 		Services:           []string{"API_GATEWAY"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("140.179.36.16/29"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("140.179.36.32/27"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("140.179.36.64/27"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("140.179.57.0/24"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("140.179.58.0/26"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("140.179.58.88/29"),
 		NetworkBorderGroup: "cn-north-1",
 		Region:             "cn-north-1",
 		Services:           []string{"EBS"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("140.179.59.0/24"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("140.179.79.160/27"),
@@ -6042,6 +6078,12 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "cn-north-1",
 		Region:             "cn-north-1",
 		Services:           []string{"EBS"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("140.179.79.64/26"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("142.4.160.0/29"),
@@ -7385,6 +7427,18 @@ var ipRanges = []IPRange{
 		Prefix:             netip.MustParsePrefix("15.220.168.0/21"),
 		NetworkBorderGroup: "me-south-1",
 		Region:             "me-south-1",
+		Services:           []string{"AMAZON", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("15.220.176.0/21"),
+		NetworkBorderGroup: "eu-north-1",
+		Region:             "eu-north-1",
+		Services:           []string{"AMAZON", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("15.220.184.0/21"),
+		NetworkBorderGroup: "eu-north-1",
+		Region:             "eu-north-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
@@ -8849,6 +8903,12 @@ var ipRanges = []IPRange{
 		Prefix:             netip.MustParsePrefix("15.230.251.6/32"),
 		NetworkBorderGroup: "ap-southeast-1",
 		Region:             "ap-southeast-1",
+		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("15.230.252.0/24"),
+		NetworkBorderGroup: "sa-east-1",
+		Region:             "sa-east-1",
 		Services:           []string{"AMAZON"},
 	},
 	{
@@ -13368,6 +13428,18 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "cn-northwest-1",
 		Region:             "cn-northwest-1",
 		Services:           []string{"API_GATEWAY"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("161.189.23.0/27"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("161.189.23.32/27"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("161.189.66.128/26"),
@@ -20096,6 +20168,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"API_GATEWAY"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("35.92.124.192/26"),
+		NetworkBorderGroup: "us-west-2",
+		Region:             "us-west-2",
+		Services:           []string{"AMAZON"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("35.92.26.0/24"),
 		NetworkBorderGroup: "us-west-2",
 		Region:             "us-west-2",
@@ -25034,10 +25112,64 @@ var ipRanges = []IPRange{
 		Services:           []string{"CODEBUILD"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("52.80.51.200/29"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.80.51.208/29"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.80.51.216/29"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.80.51.224/29"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.80.51.240/29"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.80.51.248/29"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("52.81.0.0/16"),
 		NetworkBorderGroup: "cn-north-1",
 		Region:             "cn-north-1",
 		Services:           []string{"AMAZON", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.81.113.32/27"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.81.113.64/27"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.81.113.96/27"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("52.81.124.0/23"),
@@ -25056,6 +25188,12 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "cn-north-1",
 		Region:             "cn-north-1",
 		Services:           []string{"API_GATEWAY"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.81.151.0/27"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("52.81.167.128/27"),
@@ -25226,16 +25364,88 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("52.83.26.192/27"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.83.26.224/27"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("52.83.26.64/26"),
 		NetworkBorderGroup: "cn-northwest-1",
 		Region:             "cn-northwest-1",
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("52.83.33.104/29"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.83.33.112/29"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.83.33.72/29"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.83.33.80/29"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.83.33.88/29"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.83.33.96/29"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("52.83.34.128/25"),
 		NetworkBorderGroup: "cn-northwest-1",
 		Region:             "cn-northwest-1",
 		Services:           []string{"ROUTE53_HEALTHCHECKS"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.83.34.72/29"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.83.34.80/29"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.83.34.88/29"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("52.83.34.96/27"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("52.83.35.0/25"),
@@ -32348,6 +32558,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"EBS"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("68.79.2.64/27"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("69.107.3.176/29"),
 		NetworkBorderGroup: "us-east-1",
 		Region:             "us-east-1",
@@ -32520,6 +32736,24 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "cn-northwest-1",
 		Region:             "cn-northwest-1",
 		Services:           []string{"API_GATEWAY"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("69.230.226.0/24"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("69.230.227.0/24"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("69.230.228.0/24"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"ROUTE53_RESOLVER"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("69.231.128.0/18"),
@@ -39045,4 +39279,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2022-08-22-23-23-09"
+var createDate = "2022-08-23-16-13-07"
