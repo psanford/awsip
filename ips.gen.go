@@ -7365,31 +7365,31 @@ var ipRanges = []IPRange{
 	},
 	{
 		Prefix:             netip.MustParsePrefix("15.220.112.0/21"),
-		NetworkBorderGroup: "us-east-1",
+		NetworkBorderGroup: "us-east-1-bue-1",
 		Region:             "us-east-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("15.220.120.0/21"),
-		NetworkBorderGroup: "us-east-1",
+		NetworkBorderGroup: "us-east-1-bue-1",
 		Region:             "us-east-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("15.220.128.0/21"),
-		NetworkBorderGroup: "ap-south-1",
+		NetworkBorderGroup: "ap-south-1-del-1",
 		Region:             "ap-south-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("15.220.136.0/21"),
-		NetworkBorderGroup: "ap-south-1",
+		NetworkBorderGroup: "ap-south-1-del-1",
 		Region:             "ap-south-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("15.220.144.0/23"),
-		NetworkBorderGroup: "eu-central-1",
+		NetworkBorderGroup: "eu-central-1-ham-1",
 		Region:             "eu-central-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
@@ -7401,7 +7401,7 @@ var ipRanges = []IPRange{
 	},
 	{
 		Prefix:             netip.MustParsePrefix("15.220.152.0/21"),
-		NetworkBorderGroup: "eu-central-1",
+		NetworkBorderGroup: "eu-central-1-ham-1",
 		Region:             "eu-central-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
@@ -8885,6 +8885,12 @@ var ipRanges = []IPRange{
 		Prefix:             netip.MustParsePrefix("15.230.252.0/24"),
 		NetworkBorderGroup: "sa-east-1",
 		Region:             "sa-east-1",
+		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("15.230.253.0/24"),
+		NetworkBorderGroup: "ap-south-1",
+		Region:             "ap-south-1",
 		Services:           []string{"AMAZON"},
 	},
 	{
@@ -39279,4 +39285,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2022-08-25-20-43-08"
+var createDate = "2022-08-26-23-43-08"
