@@ -34436,6 +34436,42 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("99.77.233.0/24"),
+		NetworkBorderGroup: "ca-central-1",
+		Region:             "ca-central-1",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.234.0/24"),
+		NetworkBorderGroup: "sa-east-1",
+		Region:             "sa-east-1",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.235.0/24"),
+		NetworkBorderGroup: "af-south-1",
+		Region:             "af-south-1",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.236.0/24"),
+		NetworkBorderGroup: "me-south-1",
+		Region:             "me-south-1",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.237.0/24"),
+		NetworkBorderGroup: "ap-southeast-3",
+		Region:             "ap-southeast-3",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.238.0/24"),
+		NetworkBorderGroup: "ap-south-1",
+		Region:             "ap-south-1",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("99.77.239.0/24"),
 		NetworkBorderGroup: "ap-southeast-2",
 		Region:             "ap-southeast-2",
@@ -34448,15 +34484,81 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("99.77.240.0/24"),
+		NetworkBorderGroup: "ap-southeast-1",
+		Region:             "ap-southeast-1",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.241.0/24"),
+		NetworkBorderGroup: "ap-east-1",
+		Region:             "ap-east-1",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.242.0/24"),
+		NetworkBorderGroup: "ap-northeast-2",
+		Region:             "ap-northeast-2",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.243.0/24"),
+		NetworkBorderGroup: "ap-northeast-3",
+		Region:             "ap-northeast-3",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.244.0/24"),
+		NetworkBorderGroup: "ap-northeast-1",
+		Region:             "ap-northeast-1",
+		Services:           []string{"AMAZON", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.245.0/24"),
+		NetworkBorderGroup: "eu-south-1",
+		Region:             "eu-south-1",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.246.0/24"),
+		NetworkBorderGroup: "eu-north-1",
+		Region:             "eu-north-1",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("99.77.247.0/24"),
 		NetworkBorderGroup: "eu-central-1",
 		Region:             "eu-central-1",
 		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("99.77.248.0/24"),
+		NetworkBorderGroup: "eu-west-3",
+		Region:             "eu-west-3",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.249.0/24"),
+		NetworkBorderGroup: "eu-west-2",
+		Region:             "eu-west-2",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("99.77.250.0/24"),
 		NetworkBorderGroup: "eu-west-1",
 		Region:             "eu-west-1",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.251.0/24"),
+		NetworkBorderGroup: "us-west-1",
+		Region:             "us-west-1",
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("99.77.252.0/24"),
+		NetworkBorderGroup: "us-east-2",
+		Region:             "us-east-2",
 		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
 	},
 	{
@@ -40281,4 +40383,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2022-09-20-06-13-07"
+var createDate = "2022-09-20-23-13-05"
