@@ -34511,7 +34511,7 @@ var ipRanges = []IPRange{
 		Prefix:             netip.MustParsePrefix("99.77.244.0/24"),
 		NetworkBorderGroup: "ap-northeast-1",
 		Region:             "ap-northeast-1",
-		Services:           []string{"AMAZON", "EC2"},
+		Services:           []string{"AMAZON", "CHIME_VOICECONNECTOR", "EC2"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("99.77.245.0/24"),
@@ -40383,4 +40383,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2022-09-20-23-13-05"
+var createDate = "2022-09-21-12-43-07"
