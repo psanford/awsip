@@ -716,12 +716,6 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
-		Prefix:             netip.MustParsePrefix("13.192.0.0/13"),
-		NetworkBorderGroup: "us-east-1",
-		Region:             "us-east-1",
-		Services:           []string{"AMAZON"},
-	},
-	{
 		Prefix:             netip.MustParsePrefix("13.200.0.0/15"),
 		NetworkBorderGroup: "ap-south-1",
 		Region:             "ap-south-1",
@@ -13790,18 +13784,6 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
-		Prefix:             netip.MustParsePrefix("16.164.0.0/16"),
-		NetworkBorderGroup: "eu-south-2",
-		Region:             "eu-south-2",
-		Services:           []string{"AMAZON"},
-	},
-	{
-		Prefix:             netip.MustParsePrefix("16.165.0.0/16"),
-		NetworkBorderGroup: "eu-south-2",
-		Region:             "eu-south-2",
-		Services:           []string{"AMAZON"},
-	},
-	{
 		Prefix:             netip.MustParsePrefix("16.168.0.0/15"),
 		NetworkBorderGroup: "eu-north-1",
 		Region:             "eu-north-1",
@@ -13850,18 +13832,6 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
-		Prefix:             netip.MustParsePrefix("16.180.0.0/16"),
-		NetworkBorderGroup: "eu-central-2",
-		Region:             "eu-central-2",
-		Services:           []string{"AMAZON"},
-	},
-	{
-		Prefix:             netip.MustParsePrefix("16.181.0.0/16"),
-		NetworkBorderGroup: "eu-central-2",
-		Region:             "eu-central-2",
-		Services:           []string{"AMAZON"},
-	},
-	{
 		Prefix:             netip.MustParsePrefix("16.182.0.0/16"),
 		NetworkBorderGroup: "us-east-1",
 		Region:             "us-east-1",
@@ -13892,42 +13862,6 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
-		Prefix:             netip.MustParsePrefix("16.28.0.0/16"),
-		NetworkBorderGroup: "eu-west-3",
-		Region:             "eu-west-3",
-		Services:           []string{"AMAZON"},
-	},
-	{
-		Prefix:             netip.MustParsePrefix("16.29.0.0/16"),
-		NetworkBorderGroup: "eu-west-3",
-		Region:             "eu-west-3",
-		Services:           []string{"AMAZON"},
-	},
-	{
-		Prefix:             netip.MustParsePrefix("16.30.0.0/16"),
-		NetworkBorderGroup: "eu-west-3",
-		Region:             "eu-west-3",
-		Services:           []string{"AMAZON"},
-	},
-	{
-		Prefix:             netip.MustParsePrefix("16.31.0.0/16"),
-		NetworkBorderGroup: "eu-west-3",
-		Region:             "eu-west-3",
-		Services:           []string{"AMAZON"},
-	},
-	{
-		Prefix:             netip.MustParsePrefix("16.48.0.0/16"),
-		NetworkBorderGroup: "il-central-1",
-		Region:             "il-central-1",
-		Services:           []string{"AMAZON"},
-	},
-	{
-		Prefix:             netip.MustParsePrefix("16.49.0.0/16"),
-		NetworkBorderGroup: "il-central-1",
-		Region:             "il-central-1",
-		Services:           []string{"AMAZON"},
-	},
-	{
 		Prefix:             netip.MustParsePrefix("16.50.0.0/15"),
 		NetworkBorderGroup: "ap-southeast-4",
 		Region:             "ap-southeast-4",
@@ -13955,18 +13889,6 @@ var ipRanges = []IPRange{
 		Prefix:             netip.MustParsePrefix("16.55.0.0/16"),
 		NetworkBorderGroup: "ca-central-1",
 		Region:             "ca-central-1",
-		Services:           []string{"AMAZON"},
-	},
-	{
-		Prefix:             netip.MustParsePrefix("16.56.0.0/16"),
-		NetworkBorderGroup: "eu-north-1",
-		Region:             "eu-north-1",
-		Services:           []string{"AMAZON"},
-	},
-	{
-		Prefix:             netip.MustParsePrefix("16.57.0.0/16"),
-		NetworkBorderGroup: "eu-north-1",
-		Region:             "eu-north-1",
 		Services:           []string{"AMAZON"},
 	},
 	{
@@ -20936,12 +20858,6 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON", "CLOUDFRONT"},
 	},
 	{
-		Prefix:             netip.MustParsePrefix("40.172.0.0/14"),
-		NetworkBorderGroup: "eu-west-2",
-		Region:             "eu-west-2",
-		Services:           []string{"AMAZON"},
-	},
-	{
 		Prefix:             netip.MustParsePrefix("40.176.0.0/16"),
 		NetworkBorderGroup: "ca-west-1",
 		Region:             "ca-west-1",
@@ -22755,8 +22671,8 @@ var ipRanges = []IPRange{
 	},
 	{
 		Prefix:             netip.MustParsePrefix("51.100.0.0/15"),
-		NetworkBorderGroup: "me-south-1",
-		Region:             "me-south-1",
+		NetworkBorderGroup: "eu-south-1",
+		Region:             "eu-south-1",
 		Services:           []string{"AMAZON"},
 	},
 	{
@@ -32870,12 +32786,6 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
-		Prefix:             netip.MustParsePrefix("54.6.0.0/16"),
-		NetworkBorderGroup: "me-central-1",
-		Region:             "me-central-1",
-		Services:           []string{"AMAZON"},
-	},
-	{
 		Prefix:             netip.MustParsePrefix("54.64.0.0/15"),
 		NetworkBorderGroup: "ap-northeast-1",
 		Region:             "ap-northeast-1",
@@ -32898,12 +32808,6 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "us-west-2",
 		Region:             "us-west-2",
 		Services:           []string{"AMAZON", "EC2"},
-	},
-	{
-		Prefix:             netip.MustParsePrefix("54.7.0.0/16"),
-		NetworkBorderGroup: "me-central-1",
-		Region:             "me-central-1",
-		Services:           []string{"AMAZON"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("54.72.0.0/15"),
@@ -33926,12 +33830,6 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
-		Prefix:             netip.MustParsePrefix("76.162.0.0/15"),
-		NetworkBorderGroup: "eu-south-1",
-		Region:             "eu-south-1",
-		Services:           []string{"AMAZON"},
-	},
-	{
 		Prefix:             netip.MustParsePrefix("76.223.0.0/17"),
 		NetworkBorderGroup: "GLOBAL",
 		Region:             "GLOBAL",
@@ -34119,8 +34017,8 @@ var ipRanges = []IPRange{
 	},
 	{
 		Prefix:             netip.MustParsePrefix("98.80.0.0/12"),
-		NetworkBorderGroup: "eu-central-1",
-		Region:             "eu-central-1",
+		NetworkBorderGroup: "us-east-1",
+		Region:             "us-east-1",
 		Services:           []string{"AMAZON"},
 	},
 	{
@@ -40503,4 +40401,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2022-10-11-22-43-07"
+var createDate = "2022-10-12-21-13-09"
