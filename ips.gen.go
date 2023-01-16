@@ -5564,12 +5564,6 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
-		Prefix:             netip.MustParsePrefix("13.34.86.96/27"),
-		NetworkBorderGroup: "eu-west-2",
-		Region:             "eu-west-2",
-		Services:           []string{"AMAZON"},
-	},
-	{
 		Prefix:             netip.MustParsePrefix("13.34.87.0/27"),
 		NetworkBorderGroup: "ap-south-1",
 		Region:             "ap-south-1",
@@ -39051,4 +39045,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2023-01-12-14-43-09"
+var createDate = "2023-01-16-03-13-08"
