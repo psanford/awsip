@@ -32889,7 +32889,7 @@ var ipRanges = []IPRange{
 	},
 	{
 		Prefix:             netip.MustParsePrefix("96.0.144.0/21"),
-		NetworkBorderGroup: "ap-southeast-1",
+		NetworkBorderGroup: "ap-southeast-1-mnl-1",
 		Region:             "ap-southeast-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
@@ -40203,4 +40203,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2023-03-24-01-13-09"
+var createDate = "2023-03-24-20-13-09"
