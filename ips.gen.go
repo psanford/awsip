@@ -5972,6 +5972,18 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("13.34.94.64/27"),
+		NetworkBorderGroup: "eu-west-1",
+		Region:             "eu-west-1",
+		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("13.34.94.96/27"),
+		NetworkBorderGroup: "eu-west-1",
+		Region:             "eu-west-1",
+		Services:           []string{"AMAZON"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("13.35.0.0/16"),
 		NetworkBorderGroup: "GLOBAL",
 		Region:             "GLOBAL",
@@ -14978,6 +14990,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("16.62.188.224/28"),
+		NetworkBorderGroup: "eu-central-2",
+		Region:             "eu-central-2",
+		Services:           []string{"CODEBUILD"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("16.62.194.0/25"),
 		NetworkBorderGroup: "eu-central-2",
 		Region:             "eu-central-2",
@@ -15390,6 +15408,12 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "eu-south-2",
 		Region:             "eu-south-2",
 		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("18.100.209.192/28"),
+		NetworkBorderGroup: "eu-south-2",
+		Region:             "eu-south-2",
+		Services:           []string{"CODEBUILD"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("18.100.64.128/26"),
@@ -17022,6 +17046,12 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "ap-south-2",
 		Region:             "ap-south-2",
 		Services:           []string{"S3"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("18.60.78.240/28"),
+		NetworkBorderGroup: "ap-south-2",
+		Region:             "ap-south-2",
+		Services:           []string{"CODEBUILD"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("18.64.0.0/14"),
@@ -40239,4 +40269,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2023-03-27-14-13-08"
+var createDate = "2023-03-28-16-13-08"
