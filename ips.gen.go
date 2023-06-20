@@ -6242,6 +6242,18 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("13.34.98.64/27"),
+		NetworkBorderGroup: "us-east-1",
+		Region:             "us-east-1",
+		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("13.34.98.96/27"),
+		NetworkBorderGroup: "us-east-1",
+		Region:             "us-east-1",
+		Services:           []string{"AMAZON"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("13.35.0.0/16"),
 		NetworkBorderGroup: "GLOBAL",
 		Region:             "GLOBAL",
@@ -24212,6 +24224,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("51.16.103.16/28"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
+		Services:           []string{"CODEBUILD"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("51.16.104.0/23"),
 		NetworkBorderGroup: "il-central-1",
 		Region:             "il-central-1",
@@ -31856,6 +31874,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("54.222.100.0/22"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"AMAZON", "EC2"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("54.222.112.0/20"),
 		NetworkBorderGroup: "cn-north-1",
 		Region:             "cn-north-1",
@@ -31914,18 +31938,6 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "cn-north-1",
 		Region:             "cn-north-1",
 		Services:           []string{"AMAZON"},
-	},
-	{
-		Prefix:             netip.MustParsePrefix("54.222.59.0/24"),
-		NetworkBorderGroup: "cn-north-1",
-		Region:             "cn-north-1",
-		Services:           []string{"AMAZON", "EC2"},
-	},
-	{
-		Prefix:             netip.MustParsePrefix("54.222.64.0/23"),
-		NetworkBorderGroup: "cn-north-1",
-		Region:             "cn-north-1",
-		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("54.222.66.0/23"),
@@ -41889,4 +41901,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2023-06-17-02-03-08"
+var createDate = "2023-06-19-20-33-09"
