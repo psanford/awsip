@@ -24440,10 +24440,22 @@ var ipRanges = []IPRange{
 		Services:           []string{"CODEBUILD"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("51.16.103.32/27"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
+		Services:           []string{"CLOUD9"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("51.16.104.0/23"),
 		NetworkBorderGroup: "il-central-1",
 		Region:             "il-central-1",
 		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("51.16.183.64/27"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
+		Services:           []string{"CLOUD9"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("51.16.204.0/24"),
@@ -42489,4 +42501,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2023-07-10-20-13-10"
+var createDate = "2023-07-11-19-53-09"
