@@ -14576,6 +14576,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"CODEBUILD"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("16.50.248.80/29"),
+		NetworkBorderGroup: "ap-southeast-4",
+		Region:             "ap-southeast-4",
+		Services:           []string{"EC2_INSTANCE_CONNECT"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("16.50.67.0/26"),
 		NetworkBorderGroup: "ap-southeast-4",
 		Region:             "ap-southeast-4",
@@ -14718,6 +14724,12 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "eu-central-2",
 		Region:             "eu-central-2",
 		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("16.63.77.8/29"),
+		NetworkBorderGroup: "eu-central-2",
+		Region:             "eu-central-2",
+		Services:           []string{"EC2_INSTANCE_CONNECT"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("16.63.88.0/22"),
@@ -15198,6 +15210,12 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "eu-south-2",
 		Region:             "eu-south-2",
 		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("18.101.90.48/29"),
+		NetworkBorderGroup: "eu-south-2",
+		Region:             "eu-south-2",
+		Services:           []string{"EC2_INSTANCE_CONNECT"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("18.102.0.0/16"),
@@ -22502,6 +22520,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"WORKSPACES_GATEWAYS"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("43.192.155.8/29"),
+		NetworkBorderGroup: "cn-northwest-1",
+		Region:             "cn-northwest-1",
+		Services:           []string{"EC2_INSTANCE_CONNECT"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("43.192.156.0/23"),
 		NetworkBorderGroup: "cn-northwest-1",
 		Region:             "cn-northwest-1",
@@ -22560,6 +22584,12 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "cn-north-1",
 		Region:             "cn-north-1",
 		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("43.196.20.40/29"),
+		NetworkBorderGroup: "cn-north-1",
+		Region:             "cn-north-1",
+		Services:           []string{"EC2_INSTANCE_CONNECT"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("43.196.3.64/26"),
@@ -41187,4 +41217,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2023-09-14-20-43-09"
+var createDate = "2023-09-15-13-43-10"
