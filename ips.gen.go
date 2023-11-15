@@ -410,6 +410,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"S3"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("108.136.170.0/23"),
+		NetworkBorderGroup: "ap-southeast-3",
+		Region:             "ap-southeast-3",
+		Services:           []string{"API_GATEWAY"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("108.136.221.0/26"),
 		NetworkBorderGroup: "ap-southeast-3",
 		Region:             "ap-southeast-3",
@@ -432,6 +438,18 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "ap-southeast-3",
 		Region:             "ap-southeast-3",
 		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("108.137.25.0/24"),
+		NetworkBorderGroup: "ap-southeast-3",
+		Region:             "ap-southeast-3",
+		Services:           []string{"API_GATEWAY"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("108.137.26.0/24"),
+		NetworkBorderGroup: "ap-southeast-3",
+		Region:             "ap-southeast-3",
+		Services:           []string{"API_GATEWAY"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("108.137.58.0/26"),
@@ -16142,6 +16160,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("16.50.184.0/23"),
+		NetworkBorderGroup: "ap-southeast-4",
+		Region:             "ap-southeast-4",
+		Services:           []string{"API_GATEWAY"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("16.50.206.0/25"),
 		NetworkBorderGroup: "ap-southeast-4",
 		Region:             "ap-southeast-4",
@@ -16158,6 +16182,12 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "ap-southeast-4",
 		Region:             "ap-southeast-4",
 		Services:           []string{"EC2_INSTANCE_CONNECT"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("16.50.66.0/24"),
+		NetworkBorderGroup: "ap-southeast-4",
+		Region:             "ap-southeast-4",
+		Services:           []string{"API_GATEWAY"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("16.50.67.0/26"),
@@ -16286,6 +16316,18 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("16.62.248.128/25"),
+		NetworkBorderGroup: "eu-central-2",
+		Region:             "eu-central-2",
+		Services:           []string{"API_GATEWAY"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("16.62.51.0/24"),
+		NetworkBorderGroup: "eu-central-2",
+		Region:             "eu-central-2",
+		Services:           []string{"API_GATEWAY"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("16.62.54.0/26"),
 		NetworkBorderGroup: "eu-central-2",
 		Region:             "eu-central-2",
@@ -16320,6 +16362,12 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "eu-central-2",
 		Region:             "eu-central-2",
 		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("16.63.20.0/25"),
+		NetworkBorderGroup: "eu-central-2",
+		Region:             "eu-central-2",
+		Services:           []string{"API_GATEWAY"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("16.63.77.8/29"),
@@ -16782,6 +16830,12 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "eu-south-2",
 		Region:             "eu-south-2",
 		Services:           []string{"ROUTE53_RESOLVER"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("18.100.66.0/23"),
+		NetworkBorderGroup: "eu-south-2",
+		Region:             "eu-south-2",
+		Services:           []string{"API_GATEWAY"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("18.100.71.128/25"),
@@ -18524,6 +18578,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"ROUTE53_RESOLVER"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("18.60.65.0/24"),
+		NetworkBorderGroup: "ap-south-2",
+		Region:             "ap-south-2",
+		Services:           []string{"API_GATEWAY"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("18.60.68.0/26"),
 		NetworkBorderGroup: "ap-south-2",
 		Region:             "ap-south-2",
@@ -18570,6 +18630,24 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "ap-south-2",
 		Region:             "ap-south-2",
 		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("18.61.189.0/24"),
+		NetworkBorderGroup: "ap-south-2",
+		Region:             "ap-south-2",
+		Services:           []string{"API_GATEWAY"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("18.61.26.0/25"),
+		NetworkBorderGroup: "ap-south-2",
+		Region:             "ap-south-2",
+		Services:           []string{"API_GATEWAY"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("18.61.26.128/25"),
+		NetworkBorderGroup: "ap-south-2",
+		Region:             "ap-south-2",
+		Services:           []string{"API_GATEWAY"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("18.64.0.0/14"),
@@ -21728,6 +21806,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"ROUTE53_RESOLVER"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("3.28.64.0/24"),
+		NetworkBorderGroup: "me-central-1",
+		Region:             "me-central-1",
+		Services:           []string{"API_GATEWAY"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("3.28.65.0/26"),
 		NetworkBorderGroup: "me-central-1",
 		Region:             "me-central-1",
@@ -21828,6 +21912,12 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "me-central-1",
 		Region:             "me-central-1",
 		Services:           []string{"CLOUDFRONT"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("3.29.89.0/24"),
+		NetworkBorderGroup: "me-central-1",
+		Region:             "me-central-1",
+		Services:           []string{"API_GATEWAY"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("3.3.0.0/23"),
@@ -25328,6 +25418,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"S3"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("51.112.20.0/23"),
+		NetworkBorderGroup: "me-central-1",
+		Region:             "me-central-1",
+		Services:           []string{"API_GATEWAY"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("51.118.0.0/15"),
 		NetworkBorderGroup: "eu-south-1",
 		Region:             "eu-south-1",
@@ -25362,6 +25458,18 @@ var ipRanges = []IPRange{
 		NetworkBorderGroup: "il-central-1",
 		Region:             "il-central-1",
 		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("51.16.149.0/24"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
+		Services:           []string{"API_GATEWAY"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("51.16.150.0/24"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
+		Services:           []string{"API_GATEWAY"},
 	},
 	{
 		Prefix:             netip.MustParsePrefix("51.16.183.64/27"),
@@ -43593,4 +43701,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2023-11-10-21-13-09"
+var createDate = "2023-11-14-14-13-09"
