@@ -39392,6 +39392,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"ROUTE53_HEALTHCHECKS"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("2600:1f1f:4000::/36"),
+		NetworkBorderGroup: "us-east-1",
+		Region:             "us-east-1",
+		Services:           []string{"AMAZON", "EC2"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("2600:1f1f:8000::/36"),
 		NetworkBorderGroup: "us-east-1-wl1-atl-wlz-1",
 		Region:             "us-east-1",
@@ -39587,6 +39593,12 @@ var ipRanges = []IPRange{
 		Prefix:             netip.MustParsePrefix("2600:1f2e::/36"),
 		NetworkBorderGroup: "sa-east-1",
 		Region:             "sa-east-1",
+		Services:           []string{"AMAZON", "EC2"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("2600:1f2f:4000::/36"),
+		NetworkBorderGroup: "us-east-1",
+		Region:             "us-east-1",
 		Services:           []string{"AMAZON", "EC2"},
 	},
 	{
@@ -43719,4 +43731,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2023-11-16-15-13-07"
+var createDate = "2023-11-17-18-13-07"
