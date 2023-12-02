@@ -41540,6 +41540,12 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON", "ROUTE53_HEALTHCHECKS", "EC2"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("2600:f0f0:30::/44"),
+		NetworkBorderGroup: "us-east-2",
+		Region:             "us-east-2",
+		Services:           []string{"AMAZON", "EC2"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("2600:f0f0:30e::/48"),
 		NetworkBorderGroup: "us-west-2",
 		Region:             "us-west-2",
@@ -43839,4 +43845,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2023-11-30-21-53-09"
+var createDate = "2023-12-01-17-43-07"
