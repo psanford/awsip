@@ -42974,6 +42974,24 @@ var ipRanges = []IPRange{
 		Services:           []string{"AMAZON"},
 	},
 	{
+		Prefix:             netip.MustParsePrefix("2a01:578:0:7300::1/128"),
+		NetworkBorderGroup: "eu-west-3",
+		Region:             "eu-west-3",
+		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("2a01:578:0:7301::1/128"),
+		NetworkBorderGroup: "eu-west-3",
+		Region:             "eu-west-3",
+		Services:           []string{"AMAZON"},
+	},
+	{
+		Prefix:             netip.MustParsePrefix("2a01:578:0:7302::1/128"),
+		NetworkBorderGroup: "eu-west-3",
+		Region:             "eu-west-3",
+		Services:           []string{"AMAZON"},
+	},
+	{
 		Prefix:             netip.MustParsePrefix("2a01:578:0:7400::/56"),
 		NetworkBorderGroup: "eu-south-1",
 		Region:             "eu-south-1",
@@ -44373,4 +44391,4 @@ var ipRanges = []IPRange{
 	},
 }
 
-var createDate = "2024-01-04-19-53-10"
+var createDate = "2024-01-05-13-53-07"
