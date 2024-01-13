@@ -16,10 +16,9 @@ func IsAwsIP(ip netip.Addr) bool {
 // Range returns the ip range and metadata an address falls within.
 // If the IP is not an AWS IP address it returns nil
 func Range(ip netip.Addr) *IPRange {
-	for _, r := range ipRanges {
-		if r.Prefix.Contains(ip) {
-			return &r
-		}
+	_, r, ok := cidrTbl.Lookup(ip)
+	if ok {
+		return &r
 	}
 	return nil
 }
