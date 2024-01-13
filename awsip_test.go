@@ -31,6 +31,36 @@ func TestIsAwsIP(t *testing.T) {
 	}
 }
 
+func BenchmarkLookup(b *testing.B) {
+	tests := []struct {
+		ip    string
+		isAWS bool
+	}{
+		{"2a05:d07f:e0ff::ffff", true},
+		{"54.74.0.27", true},
+		{"2a05:d03a:8000::1", true},
+		{"100.23.255.254", true},
+		{"57.180.0.0", true},
+		{"127.0.0.12", false},
+		{"10.48.20.96", false},
+		{"8.8.8.8", false},
+		{"2606:4700:4700::1111", false},
+	}
+
+	for _, tc := range tests {
+		ip := netip.MustParseAddr(tc.ip)
+		b.Run(tc.ip, func(b *testing.B) {
+			for i := 0; i < b.N; i++ {
+				isAws := IsAwsIP(ip)
+
+				if isAws != tc.isAWS {
+					b.Fatalf("%s got isAws=%t expected=%t", tc.ip, isAws, tc.isAWS)
+				}
+			}
+		})
+	}
+}
+
 func ExampleRange() {
 	ip := netip.MustParseAddr("54.74.0.27")
 	r := Range(ip)
