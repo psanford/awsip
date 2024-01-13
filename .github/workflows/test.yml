@@ -8,12 +8,12 @@ jobs:
     timeout-minutes: 3
     strategy:
       matrix:
-        go-version: [1.18beta1]
+        go-version: [stable]
         os: [ubuntu-latest, windows-latest]
 
     steps:
     - name: Set up Go
-      uses: actions/setup-go@v1
+      uses: actions/setup-go@v4
       with:
         go-version: ${{ matrix.go-version }}
       id: go
