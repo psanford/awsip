@@ -1,3 +1,7 @@
+github.com/gaissmai/cidrtree v0.5.0 h1:noZ73FM38fRV5Uw28jTcKRTHX/84ylEMT87sVuFqt1Y=
+github.com/gaissmai/cidrtree v0.5.0/go.mod h1:7snMgBXDWPq7v67RtDmGqOt6i4HGEhvFBIbg9nUiQ5k=
+github.com/gaissmai/extnetip v0.4.0 h1:9pNd/Z6QSlkda35bug/IYuPYaPMTYRuqcxPce5Z9TTQ=
+github.com/gaissmai/extnetip v0.4.0/go.mod h1:M3NWlyFKaVosQXWXKKeIPK+5VM4U85DahdIqNYX4TK4=
 golang.org/x/mod v0.5.1 h1:OJxoQ/rynoF0dcCdI7cLPktw/hR2cueqYfjm43oqK38=
 golang.org/x/mod v0.5.1/go.mod h1:5OXOZSfqPIIbmVBIIKWRFfZjPR0E5r58TLhUjH0a2Ro=
 golang.org/x/sys v0.0.0-20211019181941-9d821ace8654 h1:id054HUawV2/6IGm2IV8KZQjqtwAOo2CYlOToYqa0d0=

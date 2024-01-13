@@ -103,24 +103,31 @@ package awsip
 
 import (
 	"net/netip"
+
+	"github.com/gaissmai/cidrtree"
 )
 
-var ipRanges = []IPRange{
+var cidrTbl = new(cidrtree.Table[IPRange])
+
+func init() {
+  var r IPRange
 {{- range .Prefixes}}
-	{
+  r = IPRange{
 		Prefix: netip.MustParsePrefix("{{.IPPrefix}}"),
 		NetworkBorderGroup: "{{.NetworkBorderGroup}}",
 		Region: "{{.Region}}",
 		Services: []string{ {{range .Services}}"{{.}}",{{end}} },
-	},
+	}
+  cidrTbl.Insert(r.Prefix, r)
 {{- end}}
 {{- range .Ipv6Prefixes}}
-	{
+	r = IPRange{
 		Prefix: netip.MustParsePrefix("{{.Ipv6Prefix}}"),
 		NetworkBorderGroup: "{{.NetworkBorderGroup}}",
 		Region: "{{.Region}}",
 		Services: []string{ {{range .Services}}"{{.}}",{{end}} },
-	},
+	}
+  cidrTbl.Insert(r.Prefix, r)
 {{- end}}
 }
 
