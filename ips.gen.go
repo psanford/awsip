@@ -28707,7 +28707,7 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 		Prefix:             netip.MustParsePrefix("173.82.10.0/24"),
-		NetworkBorderGroup: "ap-south-1-del-1",
+		NetworkBorderGroup: "ap-south-1-ccu-1",
 		Region:             "ap-south-1",
 		Services:           []string{"AMAZON", "EC2"},
 	}
@@ -28721,15 +28721,8 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 		Prefix:             netip.MustParsePrefix("173.82.13.0/24"),
-		NetworkBorderGroup: "eu-central-1-waw-1",
+		NetworkBorderGroup: "eu-central-1-ham-1",
 		Region:             "eu-central-1",
-		Services:           []string{"AMAZON", "EC2"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:             netip.MustParsePrefix("173.82.16.0/24"),
-		NetworkBorderGroup: "ap-southeast-2-akl-1",
-		Region:             "ap-southeast-2",
 		Services:           []string{"AMAZON", "EC2"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -28741,23 +28734,16 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:             netip.MustParsePrefix("173.82.4.0/24"),
-		NetworkBorderGroup: "us-east-1-phl-1",
-		Region:             "us-east-1",
-		Services:           []string{"AMAZON", "EC2"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:             netip.MustParsePrefix("173.82.6.0/24"),
-		NetworkBorderGroup: "us-east-1-mia-1",
-		Region:             "us-east-1",
-		Services:           []string{"AMAZON", "EC2"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
 		Prefix:             netip.MustParsePrefix("173.82.8.0/24"),
 		NetworkBorderGroup: "me-south-1-mct-1",
 		Region:             "me-south-1",
+		Services:           []string{"AMAZON", "EC2"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:             netip.MustParsePrefix("173.82.9.0/24"),
+		NetworkBorderGroup: "eu-north-1-hel-1",
+		Region:             "eu-north-1",
 		Services:           []string{"AMAZON", "EC2"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -64309,4 +64295,4 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 }
 
-var createDate = "2024-07-14-05-03-10"
+var createDate = "2024-07-15-05-03-10"
