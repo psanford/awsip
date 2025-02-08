@@ -41820,7 +41820,7 @@ func init() {
 		Prefix:             netip.MustParsePrefix("56.155.128.0/17"),
 		NetworkBorderGroup: "ap-northeast-3",
 		Region:             "ap-northeast-3",
-		Services:           []string{"AMAZON"},
+		Services:           []string{"AMAZON", "EC2"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
@@ -58030,4 +58030,4 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 }
 
-var createDate = "2025-02-06-22-43-10"
+var createDate = "2025-02-07-16-33-11"
