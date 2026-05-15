@@ -657,6 +657,20 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
+		Prefix:             netip.MustParsePrefix("104.255.56.49/32"),
+		NetworkBorderGroup: "us-east-1",
+		Region:             "us-east-1",
+		Services:           []string{"AMAZON"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:             netip.MustParsePrefix("104.255.56.50/32"),
+		NetworkBorderGroup: "us-east-1",
+		Region:             "us-east-1",
+		Services:           []string{"AMAZON"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
 		Prefix:             netip.MustParsePrefix("104.255.56.51/32"),
 		NetworkBorderGroup: "us-east-1",
 		Region:             "us-east-1",
@@ -3850,8 +3864,8 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 		Prefix:             netip.MustParsePrefix("13.248.106.192/28"),
-		NetworkBorderGroup: "me-south-1",
-		Region:             "me-south-1",
+		NetworkBorderGroup: "eu-central-1",
+		Region:             "eu-central-1",
 		Services:           []string{"AMAZON"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -5582,20 +5596,6 @@ func init() {
 		NetworkBorderGroup: "cn-north-1",
 		Region:             "cn-north-1",
 		Services:           []string{"AMAZON", "EC2"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:             netip.MustParsePrefix("140.179.1.64/27"),
-		NetworkBorderGroup: "cn-north-1",
-		Region:             "cn-north-1",
-		Services:           []string{"CLOUD9"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:             netip.MustParsePrefix("140.179.1.96/27"),
-		NetworkBorderGroup: "cn-north-1",
-		Region:             "cn-north-1",
-		Services:           []string{"CLOUD9"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
@@ -23708,13 +23708,6 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:             netip.MustParsePrefix("23.228.247.0/24"),
-		NetworkBorderGroup: "us-east-1",
-		Region:             "us-east-1",
-		Services:           []string{"AMAZON", "EC2"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
 		Prefix:             netip.MustParsePrefix("23.234.192.0/18"),
 		NetworkBorderGroup: "GLOBAL",
 		Region:             "GLOBAL",
@@ -38566,13 +38559,6 @@ func init() {
 		NetworkBorderGroup: "cn-northwest-1",
 		Region:             "cn-northwest-1",
 		Services:           []string{"AMAZON", "EC2"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:             netip.MustParsePrefix("52.83.25.128/27"),
-		NetworkBorderGroup: "cn-northwest-1",
-		Region:             "cn-northwest-1",
-		Services:           []string{"CLOUD9"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
@@ -60514,10 +60500,38 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:             netip.MustParsePrefix("2600:1f61:4000::/39"),
+		Prefix:             netip.MustParsePrefix("2600:1f61:4000::/44"),
 		NetworkBorderGroup: "us-west-2",
 		Region:             "us-west-2",
-		Services:           []string{"AMAZON", "EC2"},
+		Services:           []string{"AMAZON", "S3", "EC2"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:             netip.MustParsePrefix("2600:1f61:4020::/44"),
+		NetworkBorderGroup: "us-west-2",
+		Region:             "us-west-2",
+		Services:           []string{"AMAZON", "S3", "EC2"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:             netip.MustParsePrefix("2600:1f61:4040::/44"),
+		NetworkBorderGroup: "us-west-2",
+		Region:             "us-west-2",
+		Services:           []string{"AMAZON", "S3", "EC2"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:             netip.MustParsePrefix("2600:1f61:4080::/44"),
+		NetworkBorderGroup: "us-west-2",
+		Region:             "us-west-2",
+		Services:           []string{"AMAZON", "S3", "EC2"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:             netip.MustParsePrefix("2600:1f61:40c0::/44"),
+		NetworkBorderGroup: "us-west-2",
+		Region:             "us-west-2",
+		Services:           []string{"AMAZON", "S3", "EC2"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
@@ -72583,4 +72597,4 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 }
 
-var createDate = "2026-05-14-05-07-06"
+var createDate = "2026-05-15-05-07-06"
