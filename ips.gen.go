@@ -49447,6 +49447,13 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
+		Prefix:             netip.MustParsePrefix("63.249.180.0/24"),
+		NetworkBorderGroup: "ap-southeast-4",
+		Region:             "ap-southeast-4",
+		Services:           []string{"AMAZON", "EC2"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
 		Prefix:             netip.MustParsePrefix("63.249.181.0/24"),
 		NetworkBorderGroup: "ap-southeast-4",
 		Region:             "ap-southeast-4",
@@ -49455,6 +49462,13 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 		Prefix:             netip.MustParsePrefix("63.249.182.0/24"),
+		NetworkBorderGroup: "eu-south-1",
+		Region:             "eu-south-1",
+		Services:           []string{"AMAZON", "EC2"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:             netip.MustParsePrefix("63.249.183.0/24"),
 		NetworkBorderGroup: "eu-south-1",
 		Region:             "eu-south-1",
 		Services:           []string{"AMAZON", "EC2"},
@@ -49534,6 +49548,27 @@ func init() {
 		Prefix:             netip.MustParsePrefix("63.249.194.0/24"),
 		NetworkBorderGroup: "ap-southeast-1",
 		Region:             "ap-southeast-1",
+		Services:           []string{"AMAZON", "EC2"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:             netip.MustParsePrefix("63.249.195.0/24"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
+		Services:           []string{"AMAZON", "EC2"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:             netip.MustParsePrefix("63.249.196.0/24"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
+		Services:           []string{"AMAZON", "EC2"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:             netip.MustParsePrefix("63.249.197.0/24"),
+		NetworkBorderGroup: "il-central-1",
+		Region:             "il-central-1",
 		Services:           []string{"AMAZON", "EC2"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -74963,4 +74998,4 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 }
 
-var createDate = "2026-06-27-05-47-05"
+var createDate = "2026-06-28-00-07-05"
