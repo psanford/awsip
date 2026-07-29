@@ -18195,7 +18195,7 @@ func init() {
 		Prefix:             netip.MustParsePrefix("16.178.0.0/15"),
 		NetworkBorderGroup: "ap-southeast-2",
 		Region:             "ap-southeast-2",
-		Services:           []string{"AMAZON"},
+		Services:           []string{"AMAZON", "EC2"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
@@ -51484,6 +51484,20 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
+		Prefix:             netip.MustParsePrefix("69.107.13.48/29"),
+		NetworkBorderGroup: "eu-west-1",
+		Region:             "eu-west-1",
+		Services:           []string{"AMAZON"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:             netip.MustParsePrefix("69.107.13.56/29"),
+		NetworkBorderGroup: "eu-west-1",
+		Region:             "eu-west-1",
+		Services:           []string{"AMAZON"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
 		Prefix:             netip.MustParsePrefix("69.107.13.8/29"),
 		NetworkBorderGroup: "us-east-2",
 		Region:             "us-east-2",
@@ -71714,6 +71728,13 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
+		Prefix:             netip.MustParsePrefix("2620:107:4000:8a00::/56"),
+		NetworkBorderGroup: "us-west-2",
+		Region:             "us-west-2",
+		Services:           []string{"AMAZON"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
 		Prefix:             netip.MustParsePrefix("2620:107:4000:9000::/63"),
 		NetworkBorderGroup: "us-east-1",
 		Region:             "us-east-1",
@@ -75334,4 +75355,4 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 }
 
-var createDate = "2026-07-28-05-17-05"
+var createDate = "2026-07-29-04-57-05"
